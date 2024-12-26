@@ -1,0 +1,37 @@
+/* Mengubah warna teks "Syarief" menjadi hijau tua yang menyala */
+.profile h2 {
+    color: #004d40; /* Hijau tua */
+    text-shadow: 0 0 10px #004d40, 0 0 20px #004d40, 0 0 30px #004d40; /* Efek cahaya */
+}
+
+/* Mengubah warna teks "Web Developer", "Designer App Mobile", dan "Problem Solver" menjadi hijau */
+.profile p {
+    color: #004d40; /* Hijau tua */
+    font-size: 1.2em;
+    text-shadow: none; /* Tidak ada efek cahaya */
+}
+
+/* Efek cahaya ketika teks "Web Developer", "Designer App Mobile", dan "Problem Solver" tersentuh oleh mouse */
+.profile p:hover {
+    color: #004d40; /* Warna tetap hijau tua */
+    text-shadow: 0 0 8px #004d40, 0 0 15px #004d40; /* Efek cahaya hijau */
+}
+<style>
+/* Gaya untuk gambar dengan frame seperti ID card */
+.roadmap-item img {
+    width: 100%;
+    max-width: 200px;
+    border: 5px solid #004d40;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    box-shadow: 0 8px 15px rgba(0, 77, 64, 0.8), 0 0 20px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek animasi ketika gambar disentuh oleh mouse */
+.roadmap-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 1);
+}
+</style>
